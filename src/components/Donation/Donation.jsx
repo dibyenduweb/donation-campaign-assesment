@@ -21,7 +21,7 @@ const Donation = () => {
    
     }
   }, []);
-console.log(donation);
+//console.log(donation);
 return(
   
   <div >
@@ -31,8 +31,9 @@ return(
   {/* {donation.map(cart => <AddToCart key={cart.id} cart={cart}></AddToCart>)} */}
   {donation.slice(0, donationLength).map(cart => <DonationCard key={cart.id} cart={cart}></DonationCard>)}
 </div>
-<div className={donationLength === donation.length && 'hidden'}>
-  <button onClick={() => setDonationLength(donation.length)} className="btn btn-primary ">See All</button>
+<div className={donationLength === donation.length ? 'hidden' : '' }>
+  <button onClick={() => setDonationLength(donation.length)} className="btn btn-primary ml-[600px] px-14">See All</button>
+
 </div>
 
 

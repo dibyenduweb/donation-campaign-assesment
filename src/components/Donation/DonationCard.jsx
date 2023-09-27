@@ -7,21 +7,7 @@ const DonationCard = ({cart}) => {
 
     return (
         <>
-        {/* <div className="hero w-[1000px] h-[500px] ml-56">
-        <img className="" src={newimage} alt="" />
-        <div className="hero-overlay bg-opacity-80 mt-[400px] h-[100px]"></div>
-        <div>
-
-          <button className="btn bg-[#FF444A] border-0	 text-white mt-96 item-end mr-[800px]">
-            Donate {price}
-          </button>
-
-        </div>
-      </div>
-      <div className="ml-56 w-[900px]">
-        <h1 className="text-3xl  font-bold mt-4">{title}</h1>
-        <p className="mt-4">{price}</p>
-      </div> */}
+       
       <div className='p-10'>
       <div className='flex items-center gap-4  w-[600px]' style={{background:cart.card_bg_color}}>
         <div>
