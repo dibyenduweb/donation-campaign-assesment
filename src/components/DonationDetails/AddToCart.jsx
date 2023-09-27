@@ -5,9 +5,9 @@ import swal from "sweetalert";
 // import { useParams } from "react-router-dom";
 // import Donation from "../Donation/Donation";
 
-const AddToCart = ({ cart, }) => {
-    console.log(cart);
- const { id, title,price, image, description } = cart || {};
+const AddToCart = ({cart}) => {
+    // console.log(cart);
+ const { id, title,price, image,description,text_color  } = cart || {};
 
 const hanleAddToDonation = () => {
 
@@ -47,8 +47,8 @@ swal("Thank you", "Donation added successfully ", "success");
             <div className="hero-overlay bg-opacity-80 mt-[400px] h-[100px]"></div>
             <div>
 
-              <button onClick={hanleAddToDonation} className="btn bg-[#FF444A] border-0	 text-white mt-96 item-end mr-[800px]">
-                Donate {price}
+              <button style={{background:text_color}}   onClick={hanleAddToDonation} className="btn  text-white mt-96 item-end mr-[800px]">
+                Donate  ${price}
               </button>
 
             </div>
